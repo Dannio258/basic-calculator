@@ -1,12 +1,13 @@
 import "./App.css";
 
-function Button({ children, className = '' }) {
+function Button({ children }) {
   return (
-    <>
-      <button className={`px-4 py-2 rounded-xl bg-violet-400 text-6xl ${className}`}>
-        {children}
-      </button>
-    </>
+    <button
+      className={`size-20 rounded-xl bg-violet-400 text-600 text-3xl font-bold
+                  flex items-center justify-center`}
+    >
+      {children}
+    </button>
   );
 }
 export default Button;
