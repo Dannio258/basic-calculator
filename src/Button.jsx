@@ -1,10 +1,10 @@
 import "./App.css";
 
-function Button({ children}) {
+function Button({ children, className="" }) {
   return (
     <button
-      className={`size-20 rounded-xl bg-violet-400 text-600 text-3xl font-bold
-                  flex items-center justify-center hover:opacity-80 cursor-pointer`}
+      className={`min-w-12 min-h-12 sm:min-w-20 sm:min-h-20 rounded-xl bg-gray-700 text-slate-100 text-3xl font-bold
+                  flex items-center justify-center hover:bg-gray-600 hover:text-white cursor-pointer ${className}`}
     >
       {children}
     </button>
