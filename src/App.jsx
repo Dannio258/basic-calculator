@@ -51,8 +51,10 @@ function App() {
   return (
     <>
       <div className="w-full h-dvh flex justify-center items-center bg-gray-950">
-        <div className=" px-12 py-8 bg-gray-800 rounded-3xl flex flex-col items-center gap-5">
-          <OutputArea value={currentValue}></OutputArea>
+        <div className="w-fit px-12 py-8 bg-gray-800 rounded-3xl flex flex-col items-center gap-5">
+          <div className="w-0 min-w-full">
+            <OutputArea value={currentValue} />
+          </div>
 
           <div className="grid grid-cols-4 gap-1" onClick={HandleClick}>
             <Button className="col-span-2 bg-red-500 hover:bg-red-400">
@@ -85,7 +87,6 @@ function App() {
           </div>
         </div>
       </div>
-      x
     </>
   );
 }
